@@ -10,7 +10,7 @@ const updateController = new UpdateController()
 const fileUpload = multer(uploadConfig.multer)
 
 uploadRoutes.patch(
-    '/upload',
+    '/',
     ensureAuthenticated,
     fileUpload.single('uploadFile'),
     updateController.create

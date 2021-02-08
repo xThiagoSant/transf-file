@@ -4,6 +4,6 @@ import uploadRoutes from '../../../../modules/upload/infra/routes'
 
 const routes = Router();
 
-routes.use('/file', uploadRoutes)
+routes.use('/upload', uploadRoutes)
 
 export default routes
